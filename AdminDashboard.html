@@ -11,69 +11,65 @@
 <body class="text-slate-800">
 
   <!-- Admin Navbar -->
-  <nav class="bg-slate-900 text-white p-4 shadow-lg flex justify-between items-center">
-    <div class="font-bold text-xl tracking-wide">DialSetu<span class="text-blue-500">Pro</span> <span class="text-xs text-slate-400 ml-2">ADMIN PANEL</span></div>
-    <div class="text-sm font-medium bg-slate-800 px-4 py-2 rounded-lg border border-slate-700">🏢 Blue Bird Tech</div>
+  <nav class="bg-slate-900 text-white p-4 shadow-lg flex justify-between items-center fixed w-full top-0 z-50">
+    <div class="flex items-center gap-4">
+      <div class="font-bold text-xl tracking-wide">DialSetu<span class="text-blue-500">Pro</span></div>
+      <a href="index.html" class="text-slate-400 hover:text-white text-sm transition border-l border-slate-700 pl-4">← Back to Website</a>
+    </div>
+    <div class="text-sm font-medium bg-slate-800 px-4 py-2 rounded border border-slate-700">Admin Control Panel</div>
   </nav>
 
-  <div class="max-w-7xl mx-auto p-6">
-    <!-- Welcome Header -->
+  <div class="max-w-7xl mx-auto p-6 mt-20">
     <div class="mb-8">
-      <h1 class="text-2xl font-bold text-slate-900">Namaste, Admin! 👋</h1>
-      <p class="text-slate-500 text-sm mt-1">Yahan se aap apne agents ki live performance track kar sakte hain aur leads control kar sakte hain.</p>
+      <h1 class="text-3xl font-bold text-slate-900">Live Dashboard</h1>
+      <p class="text-slate-500 text-sm mt-1">Monitor your telecalling team in real-time. / अपनी टेलीकॉलिंग टीम की लाइव निगरानी करें।</p>
     </div>
 
-    <!-- Live Analytics Cards -->
+    <!-- Analytics Cards -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm border-l-4 border-l-blue-500">
-        <h3 class="text-slate-500 text-xs font-bold uppercase mb-1">TOTAL CALLS TODAY (Aaj ki Calls)</h3>
+      <div class="bg-white p-6 rounded-xl border border-slate-200 border-l-4 border-l-blue-500">
+        <h3 class="text-slate-500 text-xs font-bold uppercase mb-1">Total Calls Today</h3>
         <div class="text-3xl font-black text-slate-800">1,284</div>
       </div>
-      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm border-l-4 border-l-emerald-500">
-        <h3 class="text-slate-500 text-xs font-bold uppercase mb-1">ACTIVE AGENTS (Live Agents)</h3>
+      <div class="bg-white p-6 rounded-xl border border-slate-200 border-l-4 border-l-emerald-500">
+        <h3 class="text-slate-500 text-xs font-bold uppercase mb-1">Active Agents</h3>
         <div class="text-3xl font-black text-slate-800">12 <span class="text-sm text-emerald-500 font-medium">/ 15 Online</span></div>
       </div>
-      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm border-l-4 border-l-orange-500">
-        <h3 class="text-slate-500 text-xs font-bold uppercase mb-1">PENDING LEADS (Bachi hui Leads)</h3>
+      <div class="bg-white p-6 rounded-xl border border-slate-200 border-l-4 border-l-orange-500">
+        <h3 class="text-slate-500 text-xs font-bold uppercase mb-1">Pending Leads</h3>
         <div class="text-3xl font-black text-slate-800">450</div>
       </div>
     </div>
 
-    <!-- Agent Control Table -->
-    <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
-      <div class="px-6 py-4 border-b border-slate-200 bg-slate-50 flex justify-between items-center">
+    <!-- Agent Table -->
+    <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+      <div class="px-6 py-4 border-b border-slate-200 bg-slate-50">
         <h2 class="font-bold text-slate-800">Agent Performance Report</h2>
-        <button class="bg-blue-600 text-white text-xs font-bold px-4 py-2 rounded shadow hover:bg-blue-700">+ Add New Agent</button>
       </div>
-      <div class="overflow-x-auto">
-        <table class="w-full text-left border-collapse">
-          <thead>
-            <tr class="bg-slate-100 text-slate-500 text-xs uppercase border-b border-slate-200">
-              <th class="p-4 font-semibold">Agent Name</th>
-              <th class="p-4 font-semibold">Status</th>
-              <th class="p-4 font-semibold">Calls Done</th>
-              <th class="p-4 font-semibold">Talk Time</th>
-              <th class="p-4 font-semibold">Action</th>
-            </tr>
-          </thead>
-          <tbody class="text-sm">
-            <tr class="border-b border-slate-100 hover:bg-slate-50">
-              <td class="p-4 font-bold text-slate-800">Rahul Sharma (AGT-01)</td>
-              <td class="p-4"><span class="bg-emerald-100 text-emerald-700 px-2 py-1 rounded text-xs font-bold">🟢 Calling</span></td>
-              <td class="p-4 font-semibold">145</td>
-              <td class="p-4">4 hrs 12 mins</td>
-              <td class="p-4"><button class="text-red-500 font-semibold text-xs hover:underline">Block Access</button></td>
-            </tr>
-            <tr class="border-b border-slate-100 hover:bg-slate-50">
-              <td class="p-4 font-bold text-slate-800">Priya Singh (AGT-02)</td>
-              <td class="p-4"><span class="bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs font-bold">☕ On Break</span></td>
-              <td class="p-4 font-semibold">89</td>
-              <td class="p-4">2 hrs 30 mins</td>
-              <td class="p-4"><button class="text-red-500 font-semibold text-xs hover:underline">Block Access</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <table class="w-full text-left">
+        <thead class="bg-slate-100 text-slate-500 text-xs uppercase">
+          <tr>
+            <th class="p-4 font-semibold">Agent Name (एजेंट का नाम)</th>
+            <th class="p-4 font-semibold">Status (स्थिति)</th>
+            <th class="p-4 font-semibold">Calls Done (कॉल की गई)</th>
+            <th class="p-4 font-semibold">Talk Time (बातचीत का समय)</th>
+          </tr>
+        </thead>
+        <tbody class="text-sm">
+          <tr class="border-b border-slate-100">
+            <td class="p-4 font-bold text-slate-800">Rahul Sharma</td>
+            <td class="p-4"><span class="bg-emerald-100 text-emerald-700 px-2 py-1 rounded text-xs font-bold">Calling</span></td>
+            <td class="p-4 font-semibold">145</td>
+            <td class="p-4">4 hrs 12 mins</td>
+          </tr>
+          <tr class="border-b border-slate-100">
+            <td class="p-4 font-bold text-slate-800">Priya Singh</td>
+            <td class="p-4"><span class="bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs font-bold">Break</span></td>
+            <td class="p-4 font-semibold">89</td>
+            <td class="p-4">2 hrs 30 mins</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </body>
