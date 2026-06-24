@@ -5,54 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Features | DialSetu Pro</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #0f172a; }</style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #0b1120; color: #f8fafc; }
+    .glass-nav { background: rgba(11, 17, 32, 0.85); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .feature-card { background: rgba(30, 41, 59, 0.4); border: 1px solid rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); }
+    .feature-card:hover { border-color: rgba(59, 130, 246, 0.5); transform: translateY(-5px); }
+  </style>
 </head>
-<body class="antialiased">
+<body class="antialiased selection:bg-blue-500 selection:text-white">
 
-  <!-- NAVIGATION -->
-  <nav class="bg-white border-b border-slate-200 fixed w-full top-0 z-50">
+  <!-- 🌐 UNIVERSAL 5-LINK NAVBAR -->
+  <nav class="glass-nav fixed w-full top-0 z-50 transition-all">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center"><span class="text-white font-black text-xl">D</span></div>
-        <span class="text-2xl font-extrabold tracking-tight text-slate-900">DialSetu<span class="text-blue-500">Pro</span></span>
-      </div>
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center shadow-lg"><span class="text-white font-black text-xl">D</span></div>
+        <span class="text-2xl font-extrabold tracking-tight text-white">DialSetu<span class="text-blue-500">Pro</span></span>
+      </a>
       <div class="hidden md:flex items-center gap-8">
-        <a href="index.html" class="text-slate-500 hover:text-blue-600 font-medium text-sm transition">Home</a>
-        <a href="features.html" class="text-blue-600 font-semibold text-sm">Features</a>
-        <a href="pricing.html" class="text-slate-500 hover:text-blue-600 font-medium text-sm transition">Pricing</a>
-        <a href="admin.html" class="text-slate-500 hover:text-blue-600 font-medium text-sm transition">Admin Console</a>
-        <a href="agent.html" class="text-slate-500 hover:text-blue-600 font-medium text-sm transition">Agent App</a>
+        <a href="index.html" class="text-slate-300 hover:text-white font-medium text-sm transition tracking-wide">Home</a>
+        <a href="features.html" class="text-blue-400 font-bold text-sm tracking-wide">Features</a>
+        <a href="pricing.html" class="text-slate-300 hover:text-white font-medium text-sm transition tracking-wide">Pricing</a>
+        <a href="admin.html" class="text-slate-300 hover:text-white font-medium text-sm transition tracking-wide">Admin Console</a>
+        <a href="agent.html" class="text-slate-300 hover:text-white font-medium text-sm transition tracking-wide">Agent App</a>
+      </div>
+      <div>
+        <a href="https://script.google.com/macros/s/AKfycbzGCvDzij9DPIRPCYUesuG0VbHbzKG-OYkJsWMLqovYy-fjkJQtDpTNeVZxVJ9W_tvTPA/exec" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold px-6 py-2.5 rounded-lg transition shadow-lg active:scale-95">Start Free Trial</a>
       </div>
     </div>
   </nav>
 
-  <section class="pt-32 pb-20 max-w-7xl mx-auto px-6">
+  <section class="pt-40 pb-20 max-w-7xl mx-auto px-6">
     <div class="text-center mb-16">
-      <h1 class="text-4xl font-extrabold mb-4">Powerful Features for Sales Teams</h1>
-      <p class="text-slate-500 text-lg">बिक्री टीमों के लिए शक्तिशाली सुविधाएँ</p>
+      <h1 class="text-4xl lg:text-5xl font-extrabold mb-4 text-white">Powerful Features for Sales Teams</h1>
+      <p class="text-slate-400 text-lg">बिक्री टीमों के लिए शक्तिशाली सुविधाएँ</p>
     </div>
 
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
-        <div class="text-4xl mb-4">🛡️</div>
-        <h3 class="text-xl font-bold mb-2">Zero Data Theft</h3>
-        <p class="text-slate-600 text-sm mb-4">Your database remains locked inside your personal Google Drive. Agents cannot download the list; they only see one assigned lead at a time.</p>
-        <p class="text-slate-500 text-sm border-t pt-4">आपका डेटाबेस आपके निजी Google Drive में सुरक्षित रहता है। एजेंट सूची डाउनलोड नहीं कर सकते, उन्हें एक समय में केवल एक ही लीड दिखाई देगी।</p>
+      <!-- Feature 1 -->
+      <div class="feature-card p-8 rounded-3xl transition-all duration-300 shadow-xl">
+        <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center text-3xl mb-6 border border-blue-500/30">🛡️</div>
+        <h3 class="text-xl font-bold mb-3 text-white">Zero Data Theft</h3>
+        <p class="text-slate-400 text-sm mb-5 leading-relaxed">Your database remains locked inside your personal Google Drive. Agents cannot download the list; they only see one assigned lead at a time.</p>
+        <p class="text-slate-500 text-xs border-t border-slate-700 pt-4 leading-relaxed font-medium">आपका डेटाबेस आपके निजी Google Drive में सुरक्षित रहता है। एजेंट सूची डाउनलोड नहीं कर सकते।</p>
       </div>
       
-      <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
-        <div class="text-4xl mb-4">⚡</div>
-        <h3 class="text-xl font-bold mb-2">1-Click Auto Dialer</h3>
-        <p class="text-slate-600 text-sm mb-4">No need to manually type numbers. Calls connect directly from the app, saving up to 2 hours per agent daily.</p>
-        <p class="text-slate-500 text-sm border-t pt-4">नंबर टाइप करने की आवश्यकता नहीं है। कॉल सीधे ऐप से कनेक्ट होती है, जिससे प्रति एजेंट प्रतिदिन 2 घंटे तक की बचत होती है।</p>
+      <!-- Feature 2 -->
+      <div class="feature-card p-8 rounded-3xl transition-all duration-300 shadow-xl">
+        <div class="w-14 h-14 bg-emerald-500/20 rounded-2xl flex items-center justify-center text-3xl mb-6 border border-emerald-500/30">⚡</div>
+        <h3 class="text-xl font-bold mb-3 text-white">1-Click Auto Dialer</h3>
+        <p class="text-slate-400 text-sm mb-5 leading-relaxed">No need to manually type numbers. Calls connect directly from the app, saving up to 2 hours per agent daily.</p>
+        <p class="text-slate-500 text-xs border-t border-slate-700 pt-4 leading-relaxed font-medium">नंबर टाइप करने की आवश्यकता नहीं है। कॉल सीधे ऐप से कनेक्ट होती है। 2 घंटे तक की बचत।</p>
       </div>
 
-      <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
-        <div class="text-4xl mb-4">💬</div>
-        <h3 class="text-xl font-bold mb-2">Direct WhatsApp API</h3>
-        <p class="text-slate-600 text-sm mb-4">Send pre-approved WhatsApp templates instantly after the call disconnects, without saving numbers in your phonebook.</p>
-        <p class="text-slate-500 text-sm border-t pt-4">कॉल कटने के तुरंत बाद बिना नंबर सेव किए पूर्व-अनुमोदित (pre-approved) व्हाट्सएप मैसेज भेजें।</p>
+      <!-- Feature 3 -->
+      <div class="feature-card p-8 rounded-3xl transition-all duration-300 shadow-xl">
+        <div class="w-14 h-14 bg-green-500/20 rounded-2xl flex items-center justify-center text-3xl mb-6 border border-green-500/30">💬</div>
+        <h3 class="text-xl font-bold mb-3 text-white">Direct WhatsApp API</h3>
+        <p class="text-slate-400 text-sm mb-5 leading-relaxed">Send pre-approved WhatsApp templates instantly after the call disconnects, without saving numbers in your phonebook.</p>
+        <p class="text-slate-500 text-xs border-t border-slate-700 pt-4 leading-relaxed font-medium">कॉल कटने के तुरंत बाद बिना नंबर सेव किए व्हाट्सएप मैसेज भेजें।</p>
       </div>
     </div>
   </section>
