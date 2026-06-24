@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8FAFC"
+    android:padding="16dp">
+
+    <!-- Header Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Lead (Nayi Lead)"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#64748B"
+        android:textAllCaps="true"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Secure Lead Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="#FFFFFF">
+
+            <!-- Lead Name -->
+            <TextView
+                android:id="@+id/tvLeadName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ramesh Kumar"
+                android:textColor="#0F172A"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <!-- Lead Requirement / Source -->
+            <TextView
+                android:id="@+id/tvLeadSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Source: Facebook Ads | Interested in Plan B"
+                android:textColor="#64748B"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Action Buttons (Call & WhatsApp) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- 1-Click Call Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCall"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="Call Now"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:icon="@drawable/ic_call" 
+                    app:backgroundTint="#2563EB"
+                    app:cornerRadius="12dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Direct WhatsApp Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnWhatsApp"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="WhatsApp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:icon="@drawable/ic_whatsapp" 
+                    app:backgroundTint="#16A34A"
+                    app:cornerRadius="12dp"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Call Status Update Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Status (Call hone ke baad)"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#64748B"
+        android:layout_marginBottom="12dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#F1F5F9"
+            android:textColor="#0F172A"
+            android:text="✅ Interested"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#F1F5F9"
+            android:textColor="#0F172A"
+            android:text="🕒 Follow Up"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#F1F5F9"
+            android:textColor="#0F172A"
+            android:text="❌ Not Interested"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:backgroundTint="#F1F5F9"
+            android:textColor="#0F172A"
+            android:text="🚫 Wrong Number"/>
+    </GridLayout>
+
+</LinearLayout>
