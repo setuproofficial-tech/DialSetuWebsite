@@ -3,198 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DialSetu Pro | Smartest Telecalling CRM for India</title>
+  <title>DialSetu Pro | Secure Telecalling CRM</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; background-color: #f8fafc; }
-    .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
-    .gradient-text { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    /* Mobile Mockup Animation */
-    .phone-frame { border: 12px solid #0f172a; border-radius: 2.5rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); overflow: hidden; position: relative; background: #ffffff; }
-    .phone-notch { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 40%; height: 24px; background: #0f172a; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; z-index: 20; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }</style>
 </head>
-<body class="text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
+<body class="text-slate-800 antialiased">
 
-  <!-- 🛡️ NAVIGATION BAR -->
-  <nav class="glass-nav border-b border-slate-200 fixed w-full top-0 z-50 transition-all duration-300">
+  <!-- NAVIGATION BAR -->
+  <nav class="bg-white/90 backdrop-blur-md border-b border-slate-200 fixed w-full top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <div class="w-10 h-10 bg-gradient-to-br from-blue-700 to-blue-500 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/30">
-          <span class="text-white font-black text-xl leading-none">D</span>
-        </div>
-        <span class="text-2xl font-extrabold tracking-tight text-slate-900">DialSetu<span class="text-blue-600">Pro</span></span>
+        <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg"><span class="text-white font-black text-xl">D</span></div>
+        <span class="text-2xl font-extrabold text-slate-900">DialSetu<span class="text-blue-600">Pro</span></span>
       </div>
-      <div class="flex items-center gap-4">
-        <a href="#features" class="hidden md:block text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Features</a>
-        <a href="#pricing" class="hidden md:block text-sm font-semibold text-slate-600 hover:text-blue-600 transition mr-4">Pricing</a>
-        <a href="https://script.google.com/macros/s/AKfycbzGCvDzij9DPIRPCYUesuG0VbHbzKG-OYkJsWMLqovYy-fjkJQtDpTNeVZxVJ9W_tvTPA/exec" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold px-6 py-2.5 rounded-lg transition-all shadow-md shadow-blue-600/20">
-          Start Free Trial
-        </a>
+      <div class="flex items-center gap-6">
+        <a href="index.html" class="text-blue-600 font-bold text-sm">Home</a>
+        <a href="admin.html" class="text-slate-600 hover:text-blue-600 font-semibold text-sm transition">Admin View</a>
+        <a href="agent.html" class="text-slate-600 hover:text-blue-600 font-semibold text-sm transition">Agent View</a>
+        <a href="https://raw.githubusercontent.com/setuproofficial-tech/DialSetuPro-App/main/Dailsetu_CRM.apk" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold px-6 py-2.5 rounded-lg shadow-md">Download App</a>
       </div>
     </div>
   </nav>
 
-  <!-- 🚀 HERO SECTION WITH LIVE APP MOCKUP -->
-  <section class="pt-32 pb-20 lg:pt-40 lg:pb-28 px-4 overflow-hidden bg-gradient-to-b from-blue-50 to-white">
-    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+  <!-- HERO SECTION -->
+  <section class="pt-32 pb-20 px-4 text-center bg-gradient-to-b from-blue-50 to-white">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
+        Zero Data Theft. <span class="text-blue-600">Maximum Sales.</span>
+      </h1>
+      <p class="text-lg text-slate-600 font-medium mb-2">
+        Convert your Google Sheets into a high-speed Auto-Dialer and Live CRM.
+      </p>
+      <p class="text-lg text-slate-500 mb-10 font-medium">
+        अपनी Google Sheets को हाई-स्पीड ऑटो-डायलर और लाइव CRM में बदलें।
+      </p>
       
-      <!-- Left: Text Content -->
-      <div class="relative z-10 text-center lg:text-left">
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 text-emerald-800 text-xs sm:text-sm font-bold mb-6 border border-emerald-200">
-          <span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-600"></span></span>
-          India's Most Secure Telecalling CRM
-        </div>
-        
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight leading-tight">
-          Excel se Data Chori Hona Band Karein.<br>
-          <span class="gradient-text">10x Your Calling Speed.</span>
-        </h1>
-        
-        <p class="text-lg text-slate-600 mb-8 leading-relaxed font-medium">
-          Kyun apne business ka data third-party servers par daalein? <strong>DialSetu Pro</strong> chalta hai directly aapke Google Drive par. 1-Click Auto Dialing, Direct WhatsApp, aur Live Manager Tracking.
-        </p>
-        
-        <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-          <a href="https://script.google.com/macros/s/AKfycbzGCvDzij9DPIRPCYUesuG0VbHbzKG-OYkJsWMLqovYy-fjkJQtDpTNeVZxVJ9W_tvTPA/exec" target="_blank" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-xl transition text-lg shadow-xl shadow-blue-600/30 flex items-center justify-center gap-2">
-            Create Free Account
-          </a>
-          <a href="https://raw.githubusercontent.com/setuproofficial-tech/DialSetuPro-App/main/Dailsetu_CRM.apk" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-800 border-2 border-slate-200 font-bold px-8 py-4 rounded-xl transition text-lg flex items-center justify-center gap-2 shadow-sm">
-            📱 Download App (.apk)
-          </a>
-        </div>
+      <div class="flex justify-center gap-4">
+        <a href="https://script.google.com/macros/s/AKfycbzGCvDzij9DPIRPCYUesuG0VbHbzKG-OYkJsWMLqovYy-fjkJQtDpTNeVZxVJ9W_tvTPA/exec" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg">Start Free Trial / मुफ़्त ट्रायल शुरू करें</a>
       </div>
-
-      <!-- Right: Mobile App UI Mockup (CSS Based) -->
-      <div class="flex justify-center lg:justify-end relative">
-        <div class="absolute inset-0 bg-blue-500/10 blur-3xl rounded-full transform scale-150"></div>
-        <div class="phone-frame w-[320px] h-[650px] relative z-10 flex flex-col">
-          <div class="phone-notch"></div>
-          
-          <!-- App Login UI -->
-          <div class="flex-1 bg-slate-50 flex flex-col p-6 pt-16">
-            <div class="text-center mb-8">
-              <div class="w-16 h-16 mx-auto bg-gradient-to-br from-blue-700 to-blue-500 rounded-2xl flex items-center justify-center shadow-lg mb-4">
-                <span class="text-white font-black text-3xl">D</span>
-              </div>
-              <h2 class="text-xl font-bold text-slate-900">Welcome to DialSetu</h2>
-              <p class="text-xs text-slate-500 mt-1">Agent Login Portal</p>
-            </div>
-
-            <div class="space-y-4">
-              <div>
-                <label class="block text-xs font-semibold text-slate-600 mb-1 ml-1">Company Code</label>
-                <input type="text" value="BLUE101" readonly class="w-full bg-white border border-slate-200 rounded-lg px-4 py-3 text-sm font-mono text-slate-800 shadow-sm focus:outline-none">
-              </div>
-              <div>
-                <label class="block text-xs font-semibold text-slate-600 mb-1 ml-1">Agent ID</label>
-                <input type="text" value="AGT-001" readonly class="w-full bg-white border border-slate-200 rounded-lg px-4 py-3 text-sm font-mono text-slate-800 shadow-sm focus:outline-none">
-              </div>
-              <div>
-                <label class="block text-xs font-semibold text-slate-600 mb-1 ml-1">Password</label>
-                <input type="password" value="••••••••" readonly class="w-full bg-white border border-slate-200 rounded-lg px-4 py-3 text-sm font-mono text-slate-800 shadow-sm focus:outline-none">
-              </div>
-              
-              <button class="w-full bg-blue-600 text-white font-bold py-3.5 rounded-lg mt-4 shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2">
-                Secure Login <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-              </button>
-            </div>
-
-            <div class="mt-auto text-center">
-              <span class="text-[10px] text-slate-400 font-semibold flex items-center justify-center gap-1">
-                <svg class="w-3 h-3 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
-                Secured by Google Cloud
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- 🎯 FEATURES SECTION (Hinglish + English) -->
-  <section id="features" class="py-24 bg-white border-t border-slate-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16 max-w-3xl mx-auto">
-        <h2 class="text-3xl lg:text-4xl font-extrabold mb-4 text-slate-900">Why Switch to DialSetu Pro?</h2>
-        <p class="text-slate-500 text-lg">Aapke agents ki productivity badhane aur data secure rakhne ka complete ecosystem.</p>
-      </div>
-
+  <!-- FEATURES SECTION -->
+  <section class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-6">
       <div class="grid md:grid-cols-3 gap-8">
+        
         <!-- Feature 1 -->
-        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:border-blue-300 transition duration-300 hover:shadow-lg">
-          <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6">🛡️</div>
-          <h3 class="text-xl font-bold mb-3 text-slate-900">Zero Data Theft</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-4">Aapka database aapke personal Google Drive mein lock rehta hai. Agents list download nahi kar sakte, unhe sirf ek waqt par ek number dikhega.</p>
+        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+          <div class="text-3xl mb-4">🛡️</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Zero Data Theft</h3>
+          <p class="text-slate-600 text-sm mb-3">Your database remains locked inside your personal Google Drive. Agents cannot download the list; they only see one number at a time.</p>
+          <p class="text-slate-500 text-sm border-t border-slate-200 pt-3">आपका डेटाबेस आपके निजी Google Drive में सुरक्षित रहता है। एजेंट सूची डाउनलोड नहीं कर सकते, उन्हें एक समय में केवल एक नंबर दिखाई देगा।</p>
         </div>
         
         <!-- Feature 2 -->
-        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:border-emerald-300 transition duration-300 hover:shadow-lg">
-          <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-2xl mb-6">⚡</div>
-          <h3 class="text-xl font-bold mb-3 text-slate-900">1-Click Auto Dialer</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-4">App mein number dekh kar keypad par type karne ki zarurat nahi. Direct app se call connect hoti hai, saving 2 hours per agent daily.</p>
+        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+          <div class="text-3xl mb-4">⚡</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">1-Click Auto Dialer</h3>
+          <p class="text-slate-600 text-sm mb-3">No need to look at numbers and type them on the keypad. Calls connect directly from the app, saving 2 hours per agent daily.</p>
+          <p class="text-slate-500 text-sm border-t border-slate-200 pt-3">नंबर देखकर कीपैड पर टाइप करने की आवश्यकता नहीं है। कॉल सीधे ऐप से कनेक्ट होती है, जिससे प्रति एजेंट प्रतिदिन 2 घंटे की बचत होती है।</p>
         </div>
 
         <!-- Feature 3 -->
-        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:border-green-300 transition duration-300 hover:shadow-lg">
-          <div class="w-14 h-14 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-2xl mb-6">💬</div>
-          <h3 class="text-xl font-bold mb-3 text-slate-900">Direct WhatsApp API</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-4">Call disconnect hote hi agent 1-click mein pre-approved WhatsApp message bhej sakta hai, bina number contact list mein save kiye.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 💰 PRICING & BROCHURE SECTION (Like the image you sent) -->
-  <section id="pricing" class="py-24 bg-slate-900 text-white relative border-y border-slate-800">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
-        
-        <!-- Left: Text -->
-        <div>
-          <h2 class="text-3xl lg:text-4xl font-extrabold mb-6 leading-tight">Transparent Pricing.<br><span class="text-blue-400">Enterprise Value.</span></h2>
-          <p class="text-slate-400 text-lg mb-8">No hidden server costs. You only pay for the software license. Setup and Google Cloud integrations are 100% Free.</p>
-          
-          <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 mb-8 inline-block w-full">
-            <p class="text-slate-400 text-sm font-semibold mb-1">PRO PLAN</p>
-            <div class="flex items-end gap-2">
-              <span class="text-5xl font-black text-white">₹299</span>
-              <span class="text-slate-400 mb-1">/ user / month</span>
-            </div>
-            <p class="text-emerald-400 text-sm mt-3 font-medium">✓ Unlimited Leads & Calls</p>
-          </div>
-        </div>
-
-        <!-- Right: Action Box -->
-        <div class="bg-white text-slate-900 p-8 sm:p-10 rounded-3xl shadow-2xl">
-          <h3 class="text-2xl font-bold mb-4">Ready to setup?</h3>
-          <p class="text-slate-600 mb-8 text-sm">Hamari technical team aapko aapki customized Google Sheet aur App 10 minute mein setup karke degi.</p>
-          
-          <a href="https://script.google.com/macros/s/AKfycbzGCvDzij9DPIRPCYUesuG0VbHbzKG-OYkJsWMLqovYy-fjkJQtDpTNeVZxVJ9W_tvTPA/exec" target="_blank" class="w-full block text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition shadow-lg mb-4">
-            Start 7-Day Free Trial
-          </a>
-          <a href="https://docs.google.com/spreadsheets/d/1c0BgGlV7S_P3K91GN7IGtTbn3d8zFXLgDbvZuaZKhT8/edit?gid=0#gid=0" target="_blank" class="w-full block text-center bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-4 rounded-xl transition">
-            View Live Master Sheet
-          </a>
+        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+          <div class="text-3xl mb-4">💬</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Direct WhatsApp</h3>
+          <p class="text-slate-600 text-sm mb-3">Send pre-approved WhatsApp messages instantly after the call disconnects, without saving numbers in the phonebook.</p>
+          <p class="text-slate-500 text-sm border-t border-slate-200 pt-3">कॉल कटने के तुरंत बाद बिना नंबर सेव किए पूर्व-अनुमोदित (pre-approved) व्हाट्सएप मैसेज भेजें।</p>
         </div>
 
       </div>
     </div>
   </section>
-
-  <!-- 📋 FOOTER -->
-  <footer class="bg-white py-12 text-center border-t border-slate-200">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-        <span class="text-white font-black text-xl leading-none">D</span>
-      </div>
-      <span class="text-2xl font-extrabold tracking-tight text-slate-900 mb-2 block">DialSetu<span class="text-blue-600">Pro</span></span>
-      <p class="text-slate-500 font-medium text-sm">Building highly-scalable outbound engines for Indian Businesses.</p>
-      <p class="text-slate-400 text-xs mt-4">© 2026 DialSetu Systems. All rights reserved.</p>
-    </div>
-  </footer>
 
 </body>
 </html>
