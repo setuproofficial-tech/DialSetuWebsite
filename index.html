@@ -4,14 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DialSetu Pro | Smartest & 100% Secure Telecalling CRM</title>
-  <!-- Tailwind CSS for Modern Styling -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; background-color: #f8fafc; }
     .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
     .gradient-text { background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    /* Typing Animation CSS */
+    .typing-line { overflow: hidden; white-space: nowrap; border-right: 2px solid transparent; width: 0; animation: typing 2s steps(40, end) forwards, blink 0.75s step-end infinite; }
+    .delay-1 { animation-delay: 0s; }
+    .delay-2 { animation-delay: 2s; }
+    .delay-3 { animation-delay: 4s; }
+    .delay-4 { animation-delay: 6s; }
+    @keyframes typing { from { width: 0 } to { width: 100%; border-color: transparent; } }
+    @keyframes blink { from, to { border-color: transparent } 50% { border-color: #3b82f6; } }
   </style>
 </head>
 <body class="text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
@@ -26,12 +32,10 @@
         <span class="text-2xl font-extrabold tracking-tight text-slate-900">DialSetu<span class="text-blue-600">Pro</span></span>
       </div>
       <div class="flex items-center gap-4">
-        <!-- Direct APK Download Link from your GitHub -->
         <a href="https://raw.githubusercontent.com/setuproofficial-tech/DialSetuPro-App/main/Dailsetu_CRM.apk" class="hidden md:flex text-slate-600 hover:text-blue-600 font-semibold text-sm items-center gap-1.5 transition">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
           Get Android App
         </a>
-        <!-- Web App Registration Link -->
         <a href="https://script.google.com/macros/s/AKfycbzGCvDzij9DPIRPCYUesuG0VbHbzKG-OYkJsWMLqovYy-fjkJQtDpTNeVZxVJ9W_tvTPA/exec" target="_blank" class="bg-slate-900 hover:bg-blue-600 text-white text-sm font-bold px-6 py-2.5 rounded-lg transition-all shadow-md">
           Start 7-Day Free Trial
         </a>
@@ -39,144 +43,134 @@
     </div>
   </nav>
 
-  <!-- 🚀 HERO SECTION: The Value Proposition -->
-  <section class="pt-32 pb-20 lg:pt-40 lg:pb-28 px-4 text-center overflow-hidden">
+  <!-- 🚀 HERO SECTION -->
+  <section class="pt-32 pb-16 lg:pt-40 lg:pb-20 px-4 text-center overflow-hidden">
     <div class="max-w-4xl mx-auto relative z-10">
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-bold mb-8 border border-blue-100 shadow-sm">
-        <span class="flex h-2.5 w-2.5 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-600"></span></span>
-        Enterprise-Grade Infrastructure for Small Businesses
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-bold mb-8 border border-emerald-200 shadow-sm">
+        <span class="flex h-2.5 w-2.5 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-600"></span></span>
+        100% Secure: Data stays in YOUR Google Drive
       </div>
       
       <h1 class="text-5xl lg:text-7xl font-extrabold text-slate-900 mb-6 tracking-tight leading-tight">
-        Zero Data Theft. <br>
-        <span class="gradient-text">Lightning Fast Calling.</span>
+        Stop Losing Leads on Excel.<br>
+        <span class="gradient-text">10x Your Calling Speed.</span>
       </h1>
       
       <p class="text-lg lg:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-        Market CRMs force you to upload your valuable leads to their servers. <strong>DialSetu Pro</strong> runs entirely inside your secure Google Drive. Your data, your rules, automated.
+        Market CRMs force you to upload leads to their servers. <strong>DialSetu Pro</strong> runs entirely inside your secure Google Sheet. 1-Click Auto Dialing, Direct WhatsApp, and Live Tracking.
       </p>
       
       <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-        <!-- Google Apps Script Registration -->
         <a href="https://script.google.com/macros/s/AKfycbzGCvDzij9DPIRPCYUesuG0VbHbzKG-OYkJsWMLqovYy-fjkJQtDpTNeVZxVJ9W_tvTPA/exec" target="_blank" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-xl transition text-lg shadow-xl shadow-blue-600/20 flex items-center justify-center gap-2">
           Deploy Your Workspace Now
         </a>
-        <!-- GitHub Direct APK Download -->
-        <a href="https://raw.githubusercontent.com/setuproofficial-tech/DialSetuPro-App/main/Dailsetu_CRM.apk" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-bold px-8 py-4 rounded-xl transition text-lg flex items-center justify-center gap-2 shadow-sm">
-          📱 Download Agent App
+        <a href="#live-demo" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-bold px-8 py-4 rounded-xl transition text-lg flex items-center justify-center gap-2 shadow-sm">
+          ⚡ See How It Works
         </a>
       </div>
-      <p class="text-sm text-slate-500 mt-6 font-semibold">Free 7-Day Trial • No Credit Card Required</p>
     </div>
   </section>
 
-  <!-- 🏗️ THE ARCHITECTURE (Why DialSetu is Advanced) -->
-  <section class="py-24 bg-slate-900 text-white relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16 max-w-3xl mx-auto">
-        <h2 class="text-3xl lg:text-4xl font-extrabold mb-4">Built for Scale & Security</h2>
-        <p class="text-slate-400 text-lg">Samjhiye ki hum baaki sabhi telecalling softwares se better kyu hain.</p>
+  <!-- 💻 CSS LIVE APP DEMO SECTION (NO VIDEO NEEDED) -->
+  <section id="live-demo" class="py-16 bg-slate-50 border-t border-slate-200 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl lg:text-4xl font-extrabold mb-4 text-slate-900">Live API Workflow</h2>
+        <p class="text-slate-500 text-lg">Experience how our engine automates your sales process in real-time.</p>
       </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Security -->
-        <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-blue-500/50 transition">
-          <div class="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-xl flex items-center justify-center text-2xl mb-6">🛡️</div>
-          <h3 class="text-xl font-bold mb-3">100% Data Sovereignty</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">Leads kabhi hamare server par nahi aati. Sab kuch aapki personal Google Sheet mein process hota hai. Zero risk of data leak.</p>
+      
+      <!-- Code/Terminal Mockup -->
+      <div class="w-full bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-slate-700">
+        <!-- Terminal Header -->
+        <div class="bg-slate-800 px-4 py-3 flex items-center gap-2 border-b border-slate-700">
+          <div class="w-3 h-3 rounded-full bg-red-500"></div>
+          <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+          <div class="w-3 h-3 rounded-full bg-green-500"></div>
+          <span class="ml-4 text-xs text-slate-400 font-mono">DialSetu_Pro_Engine.js</span>
         </div>
-        
-        <!-- Speed -->
-        <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition">
-          <div class="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-xl flex items-center justify-center text-2xl mb-6">⚡</div>
-          <h3 class="text-xl font-bold mb-3">Optimized API Engine</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">Hamara Apps Script backend highly optimized hai. App se call disconnect hote hi status instant Google Sheet mein update hota hai.</p>
-        </div>
-
-        <!-- Integration (WhatsApp API) -->
-        <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-green-500/50 transition">
-          <div class="w-12 h-12 bg-green-500/20 text-green-400 rounded-xl flex items-center justify-center text-2xl mb-6">💬</div>
-          <h3 class="text-xl font-bold mb-3">WhatsApp API Ready</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">Direct WhatsApp integration setup. Bina number save kiye, call cut hone par automatic professional template messages bhejein.</p>
-        </div>
-
-        <!-- Scalability -->
-        <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-purple-500/50 transition">
-          <div class="w-12 h-12 bg-purple-500/20 text-purple-400 rounded-xl flex items-center justify-center text-2xl mb-6">📈</div>
-          <h3 class="text-xl font-bold mb-3">Scale to 1000+ Users</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">System architecture is designed to handle massive load. Chahe 5 agents ho ya 1000, speed aur performance hamesha top-tier rahegi.</p>
+        <!-- Terminal Body -->
+        <div class="p-6 md:p-8 font-mono text-sm md:text-base space-y-4">
+          <div class="typing-line delay-1 text-sky-400">> Fetching encrypted leads from Google Drive... [SUCCESS]</div>
+          <div class="typing-line delay-2 text-slate-300">> Agent clicks 'Call' on Android App...</div>
+          <div class="typing-line delay-3 text-yellow-400">> Calling Client: +91 98765 ***** (Duration: 02:45)</div>
+          <div class="typing-line delay-4 text-emerald-400 font-bold">> Auto-sending WhatsApp Template & Updating Sheet! ✅</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ⚙️ HOW IT WORKS (Live Demo of Workflow) -->
-  <section class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">Start in 3 Simple Steps</h2>
-        <p class="text-slate-600 text-lg">No developers required. Set up your telecalling empire in minutes.</p>
-      </div>
-
-      <div class="grid lg:grid-cols-3 gap-12 items-start">
+  <!-- 📦 DELIVERABLES & DIGITAL BROCHURE SECTION -->
+  <section class="py-24 bg-white border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
         
-        <!-- Step 1 -->
-        <div class="relative flex flex-col items-center text-center group">
-          <div class="w-20 h-20 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center text-2xl font-black mb-6 shadow-inner border border-blue-100 group-hover:scale-110 transition-transform">1</div>
-          <h3 class="text-2xl font-bold text-slate-900 mb-3">Clone Master Sheet</h3>
-          <p class="text-slate-600 leading-relaxed mb-4">Hum aapko ek highly structured database template dete hain. Apni leads yahan paste karein.</p>
-          <!-- Master Template Link -->
-          <a href="https://docs.google.com/spreadsheets/d/1c0BgGlV7S_P3K91GN7IGtTbn3d8zFXLgDbvZuaZKhT8/edit?gid=0#gid=0" target="_blank" class="text-blue-600 font-bold hover:text-blue-800 inline-flex items-center gap-1">
-            View Live Template <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        <!-- Deliverables List -->
+        <div>
+          <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">Everything you need to automate your outbound sales.</h2>
+          <p class="text-slate-600 text-lg mb-8">When you deploy DialSetu Pro, your business gets a complete enterprise-grade toolkit. No hidden fees.</p>
+          
+          <ul class="space-y-5">
+            <li class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold shrink-0 mt-1">✓</div>
+              <div>
+                <h4 class="text-lg font-bold text-slate-900">Custom Google Sheet Master Database</h4>
+                <p class="text-sm text-slate-500 mt-1">Pre-configured template with Admin & Agent views. Highly secured and restricted.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold shrink-0 mt-1">✓</div>
+              <div>
+                <h4 class="text-lg font-bold text-slate-900">DialSetu Pro Android App (.apk)</h4>
+                <p class="text-sm text-slate-500 mt-1">1-Click Auto Dialer, Direct WhatsApp messaging without saving numbers, and live status updates.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold shrink-0 mt-1">✓</div>
+              <div>
+                <h4 class="text-lg font-bold text-slate-900">Live Manager Tracking Console</h4>
+                <p class="text-sm text-slate-500 mt-1">Monitor agent talk-time, breaks, and lead conversions in real-time from anywhere.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- View Digital Brochure Card -->
+        <div class="bg-gradient-to-br from-slate-900 to-slate-800 p-10 rounded-3xl shadow-2xl border border-slate-700 text-center relative overflow-hidden">
+          <div class="absolute -right-10 -top-10 text-slate-700 opacity-20">
+            <svg class="w-48 h-48" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+          </div>
+          
+          <h3 class="text-2xl font-bold mb-4 text-white relative z-10">Want to discuss with your partners?</h3>
+          <p class="text-slate-400 mb-8 relative z-10">Read our detailed Digital Brochure containing all features, architecture details, and transparent pricing plans.</p>
+          
+          <!-- Links to brochure.html -->
+          <a href="brochure.html" target="_blank" class="inline-flex w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-xl transition shadow-lg relative z-10 items-center justify-center gap-2">
+            📄 View Digital Brochure
           </a>
         </div>
 
-        <!-- Step 2 -->
-        <div class="relative flex flex-col items-center text-center group">
-          <div class="w-20 h-20 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center text-2xl font-black mb-6 shadow-inner border border-blue-100 group-hover:scale-110 transition-transform">2</div>
-          <h3 class="text-2xl font-bold text-slate-900 mb-3">Agents Install App</h3>
-          <p class="text-slate-600 leading-relaxed mb-4">Aapke team members hamari Android app login karenge aur unhe sirf apni assign ki hui leads dikhengi.</p>
-          <a href="https://raw.githubusercontent.com/setuproofficial-tech/DialSetuPro-App/main/Dailsetu_CRM.apk" class="text-blue-600 font-bold hover:text-blue-800 inline-flex items-center gap-1">
-            Get the APK <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-          </a>
-        </div>
-
-        <!-- Step 3 -->
-        <div class="relative flex flex-col items-center text-center group">
-          <div class="w-20 h-20 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center text-2xl font-black mb-6 shadow-inner border border-blue-100 group-hover:scale-110 transition-transform">3</div>
-          <h3 class="text-2xl font-bold text-slate-900 mb-3">Live Tracking</h3>
-          <p class="text-slate-600 leading-relaxed">App se ho rahi har call, har remark aur WhatsApp message ka data turant master sheet mein update hota hai.</p>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- 🎯 FINAL CTA: Account Creation -->
-  <section class="py-20 bg-slate-50 border-t border-slate-200">
+  <!-- 🎯 FINAL CTA -->
+  <section class="py-20 bg-slate-900">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-      <div class="bg-blue-600 rounded-3xl p-10 sm:p-16 shadow-2xl relative overflow-hidden">
-        <!-- Abstract Background Pattern -->
-        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'#ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
-        
-        <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-6 relative z-10">Ready to boost your sales?</h2>
-        <p class="text-blue-100 text-lg mb-10 max-w-2xl mx-auto relative z-10">Stop struggling with scattered excel files. Unite your team on DialSetu Pro today and experience the speed.</p>
-        
-        <!-- Registration Form Link -->
-        <a href="https://script.google.com/macros/s/AKfycbzGCvDzij9DPIRPCYUesuG0VbHbzKG-OYkJsWMLqovYy-fjkJQtDpTNeVZxVJ9W_tvTPA/exec" target="_blank" class="inline-block bg-white text-blue-700 font-extrabold px-10 py-5 rounded-xl transition duration-300 hover:scale-105 shadow-xl text-lg relative z-10">
-          Create Free Organization Account
-        </a>
-        <p class="mt-6 text-blue-200 text-sm font-medium relative z-10">Instant Deployment • Unlimited Leads • 24/7 Sync</p>
-      </div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-6">Ready to boost your sales?</h2>
+      <p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto">Stop struggling with scattered excel files. Unite your team on DialSetu Pro today and experience the speed.</p>
+      
+      <a href="https://script.google.com/macros/s/AKfycbzGCvDzij9DPIRPCYUesuG0VbHbzKG-OYkJsWMLqovYy-fjkJQtDpTNeVZxVJ9W_tvTPA/exec" target="_blank" class="inline-block bg-blue-600 text-white font-extrabold px-10 py-5 rounded-xl transition duration-300 hover:bg-blue-500 shadow-xl shadow-blue-500/20 text-lg">
+        Create Free Organization Account
+      </a>
     </div>
   </section>
 
   <!-- 📋 FOOTER -->
-  <footer class="bg-white py-12 text-center border-t border-slate-200">
+  <footer class="bg-slate-950 py-12 text-center border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-6">
-      <span class="text-2xl font-extrabold tracking-tight text-slate-900 mb-2 block">DialSetu<span class="text-blue-600">Pro</span></span>
+      <span class="text-2xl font-extrabold tracking-tight text-white mb-2 block">DialSetu<span class="text-blue-600">Pro</span></span>
       <p class="text-slate-500 font-medium text-sm">Building highly-scalable outbound engines for Indian Businesses.</p>
-      <p class="text-slate-400 text-xs mt-4">© 2026 DialSetu Systems. All rights reserved.</p>
+      <p class="text-slate-600 text-xs mt-4">© 2026 DialSetu Systems. All rights reserved.</p>
     </div>
   </footer>
 
